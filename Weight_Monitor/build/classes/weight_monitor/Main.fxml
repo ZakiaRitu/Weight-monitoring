@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="380.0" style="-fx-background-color: #e49b2e;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weight_monitor.OpeningController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="518.0">
+         <top>
+            <VBox prefHeight="78.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <right>
+                        <Label text="Be Healthy!" textFill="#e0d8d6" wrapText="true" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label text="Weight Monitoring" textFill="#f5f5f5" wrapText="true" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                     </top>
+                  </BorderPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="15.0" top="8.0" />
+               </BorderPane.margin>
+            </VBox>
+         </top>
+         <center>
+            <ImageView fitHeight="255.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                   <Image backgroundLoading="true" url="@file.png" />
+               </image>
+            </ImageView>
+         </center>
+         <bottom>
+            <VBox prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="44.0" prefWidth="364.0">
+                     <children>
+                        <Label text="Select a user:" textFill="#111010" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="65.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="choicebox" opacity="0.82" prefHeight="25.0" prefWidth="126.0">
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="10.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="44.0" prefWidth="370.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleNewUserButton" opacity="0.82" prefHeight="20.0" prefWidth="100.0" text="New User" textAlignment="CENTER" wrapText="true">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleDeleteUserButton" opacity="0.82" prefHeight="20.0" prefWidth="100.0" text="Delete user" textAlignment="CENTER" wrapText="true">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleLoginButton" opacity="0.82" prefHeight="20.0" prefWidth="100.0" text="login">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>

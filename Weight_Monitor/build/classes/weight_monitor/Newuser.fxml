@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weight_monitor.NewuserController">
+   <children>
+      <MenuBar layoutY="2.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane layoutY="27.0" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #ffbb00;">
+         <children>
+            <Label layoutX="340.0" layoutY="14.0" text="Weight Monitoring" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="481.0" layoutY="45.0" text="Be Healthy!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="110.0" layoutY="132.0" text="Create a new user" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="184.0" text="Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="260.0" layoutY="181.0" promptText="Enter your name" />
+      <TextField fx:id="pass" layoutX="260.0" layoutY="224.0" promptText="Type a password" />
+      <Label layoutX="179.0" layoutY="227.0" text="Password:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="269.0" prefHeight="20.0" prefWidth="28.0" text="Age:" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="260.0" layoutY="306.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" text="Male" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="330.0" layoutY="306.0" mnemonicParsing="false" text="Female" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="193.0" layoutY="306.0" prefHeight="20.0" prefWidth="62.0" text="Gender:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="age" layoutX="260.0" layoutY="267.0" prefHeight="10.0" prefWidth="40.0" />
+      <Button fx:id="okbtn" layoutX="449.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleOKButton" prefHeight="25.0" prefWidth="77.0" text="Ok" />
+   </children>
+</AnchorPane>

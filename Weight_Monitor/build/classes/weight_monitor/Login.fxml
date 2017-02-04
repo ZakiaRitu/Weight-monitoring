@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #bbafaf;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weight_monitor.LoginController">
+   <children>
+      <Label layoutX="91.0" layoutY="58.0" text="Please enter your password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pass_field" layoutX="91.0" layoutY="101.0" prefHeight="25.0" prefWidth="139.0" promptText="password" />
+      <Button fx:id="ok_button" onAction="#handleOKButton" layoutX="244.0" layoutY="101.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Ok" />
+   </children>
+</AnchorPane>

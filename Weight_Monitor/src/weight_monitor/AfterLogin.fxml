@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weight_monitor.AfterLoginController">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #ffbb00;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Welcome o Weight Monitoring" textFill="#fcf7f7">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="27.0" layoutY="88.0" text="Check BMI">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="126.0" text="Height(m):">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hi" layoutX="113.0" layoutY="123.0" promptText="Height in meter" />
+      <Label layoutX="270.0" layoutY="126.0" text="Weight(kg):">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="wi" layoutX="348.0" layoutY="123.0" promptText="Weight in kg" />
+      <Label fx:id="result" alignment="CENTER" contentDisplay="CENTER" layoutX="99.0" layoutY="171.0" prefHeight="33.0" prefWidth="320.0" style="-fx-background-color: #d0c5c5;" />
+      <Button fx:id="butt" layoutX="505.0" layoutY="123.0" mnemonicParsing="false" onAction="#calculate" text="Calculate" />
+      <Label fx:id="status" alignment="CENTER" layoutX="470.0" layoutY="171.0" prefHeight="33.0" prefWidth="78.0" style="-fx-background-color: #d0c5c5;" />
+      <Label layoutX="57.0" layoutY="179.0" text="Result:" />
+      <Label layoutX="429.0" layoutY="179.0" text="Status:" />
+      <Label layoutX="35.0" layoutY="231.0" text="Calorie goal">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="266.0" text="How much weight do you want to lose?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="297.0" text="kg in">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="d" layoutX="173.0" layoutY="295.0" prefHeight="25.0" prefWidth="55.0" />
+      <Label layoutX="246.0" layoutY="297.0" text="days.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="k" layoutX="57.0" layoutY="294.0" prefHeight="25.0" prefWidth="55.0" />
+      <Button fx:id="ok" layoutX="295.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleOkButton" prefHeight="25.0" prefWidth="55.0" text="ok" />
+      <Label fx:id="caloriegoal" layoutX="41.0" layoutY="336.0" prefHeight="50.0" prefWidth="518.0" />
+   </children>
+</AnchorPane>
